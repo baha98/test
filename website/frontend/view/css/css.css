@@ -1,0 +1,271 @@
+a
+{
+	text-decoration: none;
+}
+body
+{
+	overflow: hidden;
+	background-image: url("acceuil.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navig
+{
+	background-color: rgb(250,250,250);
+	height: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.background-carousel
+{
+	position: relative;
+	background-size: cover;
+	z-index: 0;
+}
+.navig a
+{
+	float: left;
+	margin-left: 200px;
+	font-family: Arial;
+	color : #4169E1;
+	padding: 15px;
+}
+#carousel-position
+{
+	margin-left: 400px;
+	margin-right: 200px;
+	margin-top: 100px;
+	margin-bottom: 500px;	
+	width: 1080px;
+	height: 640px;
+}
+.login-background
+{
+	margin-top: 500px;
+	margin-left: 950px;
+	position: absolute;
+	z-index: 1;
+	background-color: #424242;
+	color: #E6E6E6;
+	width: 900px;
+	height: 400px;
+}
+.login-button
+{
+	background-color: #424242;
+	border-color: white;
+	align-content: center;
+	color: #E6E6E6;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+}
+.login-position
+{
+	text-align: center;
+	height: 200px;
+	width: 300px;
+	margin-top: 100px;
+	float:left;
+}
+.register-position
+{
+	text-align: center;
+	margin-top: 100px;
+	width: 300px;
+	float: right;
+
+}
+.register-button
+{
+	background-color: #424242;
+	border-color: white;
+	color: #E6E6E6;
+	align-content: center;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+}
+.login-register
+{
+	color: #424242;
+	margin-top: -35px;
+	box-shadow: 0px 2px 17px 2px rgba(0,0,0,0.75);
+	border-color: blue;
+	width: 400px;
+	height: 450px;
+	background-color: white;
+	float:left;
+	margin-left: 350px;
+	display: block;
+}
+#loginactive
+{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	align-items: center;
+	margin-left: 20%;
+	margin-top: 15%;
+	display: none;
+}
+#registeractive
+{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	align-items: center;
+	margin-left: 20%;
+	margin-top: 8%;
+	display: none;
+}
+#loginblock
+{
+	position: absolute;
+}
+#registerblock
+{
+	margin-left: 550px;
+	position: absolute;
+	display: none;
+}
+
+
+.container{
+
+	width: 1500px;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	margin-left: 100px;
+	margin-top: 850px;
+}
+.container .box{
+	position: relative;
+	width: 100px;
+	height: 45px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 10px;
+	/*background: #ccc;*/
+}
+.container .box .icon{
+	width: 100%;
+	height: 100%;
+	background: #151515;
+	transition: 0.5s;
+	transform-origin: top;
+	transform: translateY(0) rotateX(0deg);
+}
+.container .box:hover .icon
+{
+	transform: translateY(100%) rotateX(90deg);
+}
+.container .box .icon .fa{
+	font-size: 1em;
+	line-height: 50px;
+	color: #999;
+}
+.container .box .details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #03a9f4;
+	transition: 0.5s;
+	transform-origin: bottom;
+	transform: translateY(-100px) rotateX(90deg);
+
+}
+.container .box:hover .details
+{
+	transform: translateY(0) rotateX(0deg);
+}
+.container .box .details h3
+{
+	margin: 0;
+	padding: 0;
+	line-height: 60px;
+	font-size: 10px;
+	color: #fff;
+	font-family: sans-serif;
+}
+.container .box:nth-child(2) .details
+{
+	background: #e91e63;
+}
+.container .box:nth-child(3) .details
+{
+	background: #8bc34a;
+}
+
+.kenburn-slider{
+	width: 100%;
+	position: relative;
+}
+.kenburn-slider .slides{
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.kenburn-slider .slides > li{
+	float: left;
+	margin-right: -100%;
+	width: 100%;
+	overflow: hidden;
+	height: 1000px;
+	position: relative;
+
+
+}
+.kenburn-slider .flex-direction-nav{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.kenburn-slider .flex-direction-nav .flex-prev,
+.kenburn-slider .flex-direction-nav .flex-next{
+	background-color: rgba(255,255,255,0.7);
+	color: #333;
+	padding: 10px 20px;
+	text-decoration: none;
+	position: absolute;
+	height: 1em;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 8;
+	text-align: center;
+}
+.kenburn-slider .flex-direction-nav .flex-prev{
+	left: 0;
+}
+.kenburn-slider .flex-direction-nav .flex-next{
+	right: 0;
+}
+.slide-image{
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.flex-active-slide .slide-image{
+	animation: zoomout 5s;
+}
+@keyframes zoomout
+{
+	0%{
+		transform: scale(1.3);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
